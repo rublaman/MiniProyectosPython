@@ -15,3 +15,8 @@ class Operaciones:
     @staticmethod
     def dividir(x, y):
         return x / y
+
+    @staticmethod
+    def modulo(x, y):
+        return x % y
+
