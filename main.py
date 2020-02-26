@@ -1,12 +1,12 @@
 from Calculadora.menu import menu_calculadora
 
-opcion = 0
+op_menu = 0
 valida = True
 run = True
 
 while run:
 
-    print('='*10 + " Selecciona una operacion " + '='*10)
+    print('=' * 10 + " Selecciona una operacion " + '=' * 10)
     print("1. Adivina")
     print("2. Ahorcado")
     print("3. Calculadora")
@@ -15,21 +15,21 @@ while run:
     print()
 
     while valida:
-        opcion = int(input("Seleccione la aplicacion a ejecutar: "))
-        if 0 < opcion > 6:
+        op_menu = int(input("Seleccione la aplicacion a ejecutar: "))
+        if 0 < op_menu > 6:
             print("Introduzca una opcion valida")
         else:
             valida = False
             print()
 
-    if opcion == 1:
+    if op_menu == 1:
         pass
-    elif opcion == 2:
+    elif op_menu == 2:
         pass
-    elif opcion == 3:
+    elif op_menu == 3:
         menu_calculadora()
         valida = True
-    elif opcion == 4:
+    elif op_menu == 4:
         pass
-    elif opcion == 5:
+    elif op_menu == 5:
         run = False
